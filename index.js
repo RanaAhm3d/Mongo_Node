@@ -16,6 +16,7 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(cors());
 
+
 //Routes
 require('./src/routes')(app);
 app.all("*", (req, res, next) => {
